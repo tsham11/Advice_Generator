@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 120px 16px 180px;
+  height: 100vh;
+  background: var(--Dark-Blue, #202733);
+  font-family: 'Manrope', sans-serif;
+}
+
+.advice {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 343px;
+  min-height: 340px;
+  border-radius: 10px;
+  background: var(--Dark-Grayish-Blue, #313A48);
+  box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.10);
+}
+
+h2 {
+  width: 120px;
+  height: 15px;
+  color: var(--Neon-Green, #53FFAA);
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 3.457px;
+  margin: 40px 119px 24px;
+  text-transform: uppercase;
+}
+
+p {
+  width: 295px;
+  color: var(--Light-Cyan, #CEE3E9);
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: -0.257px;
+  margin-bottom: 110px;
+}
+
+.imgs {
+  width: 343px;
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 80px;
+}
+
+.divider {
+  background-image: url("./images/pattern-divider-mobile.svg");
+  width: 295px;
+  height: 16px;
+}
+
+.dice {
+  margin-top: 32px;
+}
+
+@media screen and (min-width:992px) {
+  body {
+    padding: 223px 450px;
+  }
+
+  .advice {
+    width: 540px;
+    min-height: 370px;
+  }
+
+  h2 {
+    width: 130px;
+    height: 18px;
+    font-size: 13px;
+    letter-spacing: 4.086px;
+    margin: 48px 209.5px 24px 208.5px;
+    text-transform: uppercase;
+  }
+
+  p {
+    width: 444px;
+    font-size: 28px;
+    letter-spacing: -0.3px;
+    margin-bottom: 150px;
+  }
+
+  .imgs {
+    width: 540px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 80px;
+  }
+
+  .divider {
+    background-image: url("./images/pattern-divider-desktop.svg");
+    width: 444px;
+    height: 16px;
+  }
+
+  .dice {
+    margin-top: 40px;
+  }
+
+  .dice:hover {
+    cursor: pointer;
+    border-radius: 64px;
+    background: var(--Neon-Green, #53FFAA);
+    box-shadow: 0px 0px 40px 0px #53FFAA;
+  }
+}
